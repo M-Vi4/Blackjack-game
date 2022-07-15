@@ -127,6 +127,9 @@ async function standButton() {
   updateScore(DEALER, card);
   await delay(1000);
   while (DEALER["score"] < YOU["score"] && game["isStand"]) {
+    if (YOU["score"] >= 21) {
+      break;
+    }
     let card = randomCard();
     showCard(DEALER, card);
     updateScore(DEALER, card);
