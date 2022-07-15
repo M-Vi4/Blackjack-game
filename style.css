@@ -1,0 +1,133 @@
+.container {
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+  -webkit-text-stroke: 0.7px;
+  -webkit-text-stroke-color: black;
+}
+
+.title-word-1 {
+  --color-1: blue;
+  --color-2: red;
+  --color-3: yellow;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+.row1,
+.row2,
+.row3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.row1,
+.row2 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7DDGGk4EOVIgtSFHDVWsW-FgxzjL6_VIl_w&usqp=CAU");
+  background-size: cover;
+  color: white;
+  border: 1px solid black;
+}
+
+.row1 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 300px;
+}
+
+.row1 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.row1 div {
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.row2 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.row2 div {
+  padding: 10px;
+}
+
+.row2 button {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hit {
+  background-color: blue;
+  -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: blue;
+}
+
+#stand {
+  background-color: yellow;
+  -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: yellow;
+}
+
+#deal {
+  background-color: red;
+  -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: red;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
